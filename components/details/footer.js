@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <View style={styles.footer}>
       <TouchableOpacity style={styles.button} onPress={()=>{ console.log("Book Now Pressed"); }}>
-        <Text style={{color: 'white', paddingVertical: 10, fontSize: 18, fontWeight: 'bold', width: '80%', textAlign: 'center',}}>Book now</Text>
-        <List.Icon color={'white'} icon="arrow-right" style={{marginLeft: -80, margin: 0, padding: 0, }} />
+        <Text style={{color: 'white', fontSize: 18, fontWeight: 'bold',}}>Book now</Text>
+        <List.Icon color={'white'} icon="arrow-right" style={{marginBottom:5}} />
       </TouchableOpacity>
     </View>
   );
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   button: {
     alignItems: "center",
     flexDirection: 'row',
+    justifyContent: "center"
     // backgroundColor: "#DDDDDD",
     // padding: 10,
     // fontSize: 14, 

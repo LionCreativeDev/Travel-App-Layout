@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 20,
     //backgroundColor: '#fbfbfc',
     backgroundColor: '#fbfbfb',
-    padding: 20,
+    paddingHorizontal: 20,
   },  
   center:{
 
@@ -79,8 +79,9 @@ const styles = StyleSheet.create({
     fontFamily: 'verdana',
     //fontFamily: 'arial',
     fontWeight: 'bold',
-    paddingTop: 20,
-    paddingBottom: 20
+    //paddingTop: 20,
+    paddingBottom: 10,
+    //backgroundColor: 'green',
   },  
   // paragraph: {
   //   margin: 24,

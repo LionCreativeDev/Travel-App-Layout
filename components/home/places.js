@@ -689,7 +689,7 @@ export default function Toptrips({ navigation, type, search }) {
     data = [...camps, ...mountains, ...beaches, ...forests].filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
   
   return (
-    <View>
+    <View style={{marginHorizontal: -10}}>
       <FlatList
         // vetical
         horizontal
@@ -794,7 +794,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     elevation: 8,
     marginLeft: 10,
-    marginRight: 10,
+    marginRight: 5,
     marginTop: 5,
   },
   itemPhoto: {

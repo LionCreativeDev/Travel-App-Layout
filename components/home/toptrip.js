@@ -7,7 +7,7 @@ import { Card, IconButton } from 'react-native-paper';
 
 export default function Toptrips() {
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 10, paddingBottom: 5}}>
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 5,}}>
       <View style={{paddingRight: 10, flexDirection: 'row', justifyContent: 'center',
     alignItems: 'center'}}>
         <Text style={styles.heading4}>Top trips</Text>

@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
   top:{
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 10
+    //marginTop: 10,
+    //backgroundColor:'red'
   },
   avatar:{
     // justifyContent: 'center',

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, Image, TextInput, FlatList, StyleSheet, Dimensions, useWindowDimensions, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TextInput, FlatList, StyleSheet, Dimensions, useWindowDimensions, TouchableOpacity, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
 import { TabView, SceneMap } from 'react-native-tab-view';
 
@@ -21,6 +21,19 @@ const OverviewRoute = () => (
 
 const ReviewsRoute = () => (
   <View style={{ flex: 1, backgroundColor: '#fff' }}>
+  {/** Example from https://github.com/react-native-training/react-native-fonts */}
+    <ScrollView style={styles.scroller}>
+      <Text style={{ fontFamily: 'normal' }}>  normal </Text>
+      <Text style={{ fontFamily: 'notoserif' }}>  notoserif </Text>
+      <Text style={{ fontFamily: 'sans-serif' }}>  sans-serif </Text>
+      <Text style={{ fontFamily: 'sans-serif-light' }}>  sans-serif-light </Text>
+      <Text style={{ fontFamily: 'sans-serif-thin' }}>  sans-serif-thin </Text>
+      <Text style={{ fontFamily: 'sans-serif-condensed' }}>  sans-serif-condensed </Text>
+      <Text style={{ fontFamily: 'sans-serif-medium' }}>  sans-serif-medium </Text>
+      <Text style={{ fontFamily: 'serif' }}>  serif </Text>
+      <Text style={{ fontFamily: 'Roboto' }}>  Roboto </Text>
+      <Text style={{ fontFamily: 'monospace' }}>  monospace </Text>
+    </ScrollView>
   </View>
 );
 
@@ -163,5 +176,8 @@ const styles = StyleSheet.create({
   },
   inactivetab:{
     color: '#999', fontSize: 14, fontWeight: 'bold', paddingRight: 10
+  },
+  scroller: {
+    flex: 1,
   }
 });
